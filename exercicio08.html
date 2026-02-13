@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Eventos Tech 2026</title>
+</head>
+<body>
+
+    <header>
+        <h1>Agenda de Eventos Tech</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Eventos</a>
+            <a href="#">Inscrição</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--
+            Usamos <section> aqui porque "Eventos" é uma divisão temática da página,
+            agrupando conteúdos relacionados sob um mesmo tema. A <section> não é
+            conteúdo autossuficiente — ela depende do contexto da página para fazer sentido.
+        -->
+        <section>
+            <h2>Eventos</h2>
+
+            <!--
+                Este é um <article> e NÃO uma <section> porque:
+
+                1. É conteúdo AUTOSSUFICIENTE — este evento poderia ser extraído
+                   desta página e publicado de forma independente (em um feed RSS,
+                   em uma rede social, em um e-mail) e ainda faria sentido completo
+                   por si só.
+
+                2. É conteúdo REDISTRIBUÍVEL — tem título, descrição, data e local,
+                   formando uma unidade de informação completa e independente.
+
+                3. A especificação HTML5 define <article> como "composição independente
+                   em um documento", o que se aplica perfeitamente a um evento, já que
+                   cada evento é uma entidade independente com seus próprios metadados.
+
+                Se fosse apenas uma <section>, implicaria que o conteúdo só faz sentido
+                dentro do contexto desta página, o que não é o caso — cada evento
+                tem valor informacional por conta própria.
+            -->
+            <article>
+                <header>
+                    <h3>Hackathon IA para o Bem</h3>
+                    <p><time datetime="2026-03-20">20 de março de 2026</time> — São Paulo, SP</p>
+                </header>
+                <p>
+                    Maratona de programação de 48 horas focada em criar soluções de
+                    inteligência artificial para problemas sociais. Equipes de até 5
+                    pessoas competem por prêmios de até R$ 50.000. Aberto a
+                    desenvolvedores, designers e profissionais de dados de todos os
+                    níveis de experiência.
+                </p>
+                <footer>
+                    <p>Inscrições abertas até <time datetime="2026-03-10">10/03/2026</time></p>
+                    <p>Organização: ONG Tech Social</p>
+                </footer>
+            </article>
+
+            <!--
+                Novamente <article> e NÃO <section> pelo mesmo motivo:
+
+                Este evento é uma unidade de conteúdo completa e independente.
+                Poderia ser sindicado via RSS, compartilhado em redes sociais ou
+                exibido em qualquer outro contexto sem perder seu significado.
+
+                O teste prático é simples: "se eu copiar apenas este bloco e colar
+                em outro site, ele faz sentido sozinho?" — Se sim, é <article>.
+                Se precisaria do restante da página para fazer sentido, seria <section>.
+            -->
+            <article>
+                <header>
+                    <h3>Workshop de Cloud Computing</h3>
+                    <p><time datetime="2026-04-05">5 de abril de 2026</time> — Online</p>
+                </header>
+                <p>
+                    Workshop prático sobre arquitetura de soluções em nuvem com foco
+                    em AWS e Google Cloud. Os participantes irão construir e implantar
+                    uma aplicação serverless do zero. Certificado de participação incluso.
+                </p>
+                <footer>
+                    <p>Inscrições abertas até <time datetime="2026-03-28">28/03/2026</time></p>
+                    <p>Organização: DevCommunity Brasil</p>
+                </footer>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Agenda Tech — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

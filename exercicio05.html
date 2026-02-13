@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Documentação — DevFramework</title>
+</head>
+<body>
+
+    <header>
+        <h1>DevFramework</h1>
+
+        <!-- Navegação principal do site — usa <nav> pois é navegação estrutural global -->
+        <nav aria-label="Navegação principal">
+            <a href="#">Home</a>
+            <a href="#">Documentação</a>
+            <a href="#">Tutoriais</a>
+            <a href="#">API</a>
+            <a href="#">Comunidade</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Documentação</h2>
+
+            <section>
+                <h3>Guia de Instalação</h3>
+
+                <!-- Navegação secundária contextual — usa <nav> pois permite
+                     navegar entre subseções da documentação, funcionando como
+                     navegação estrutural dentro do contexto -->
+                <nav aria-label="Navegação do guia de instalação">
+                    <a href="#requisitos">Requisitos</a>
+                    <a href="#instalacao">Instalação</a>
+                    <a href="#configuracao">Configuração</a>
+                    <a href="#verificacao">Verificação</a>
+                </nav>
+
+                <section id="requisitos">
+                    <h4>Requisitos do Sistema</h4>
+                    <p>
+                        Para instalar o DevFramework, você precisa de
+                        <strong>Node.js 20+</strong> e <strong>npm 10+</strong>.
+                        Sistemas operacionais suportados: Linux, macOS e Windows 10+.
+                    </p>
+                </section>
+
+                <section id="instalacao">
+                    <h4>Instalação</h4>
+                    <p>
+                        Execute o comando <code>npm install devframework</code> no
+                        terminal do seu projeto. Para instalação global, adicione
+                        a flag <code>-g</code>.
+                    </p>
+                </section>
+
+                <section id="configuracao">
+                    <h4>Configuração Inicial</h4>
+                    <p>
+                        Após a instalação, crie o arquivo <code>dev.config.js</code>
+                        na raiz do projeto. O framework oferece um assistente de
+                        configuração via <code>npx devframework init</code>.
+                    </p>
+                </section>
+
+                <section id="verificacao">
+                    <h4>Verificação</h4>
+                    <p>
+                        Para verificar se a instalação foi bem-sucedida, execute
+                        <code>npx devframework --version</code>. A saída esperada
+                        é o número da versão instalada.
+                    </p>
+                </section>
+            </section>
+
+            <section>
+                <h3>Recursos Adicionais</h3>
+                <p>
+                    Explore mais funcionalidades do framework nos links abaixo.
+                </p>
+                <!-- Aqui NÃO usamos <nav> pois são apenas links de recursos
+                     complementares, não uma navegação estrutural do site.
+                     Uma simples lista de links é suficiente. -->
+                <ul>
+                    <li><a href="#">Exemplos de projetos</a></li>
+                    <li><a href="#">Changelog completo</a></li>
+                    <li><a href="#">Repositório no GitHub</a></li>
+                    <li><a href="#">Fórum de discussão</a></li>
+                </ul>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 DevFramework — Documentação sob licença MIT.</p>
+    </footer>
+
+</body>
+</html>

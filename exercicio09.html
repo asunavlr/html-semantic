@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Revista Digital — TechMag</title>
+</head>
+<body>
+
+    <header>
+        <h1>TechMag</h1>
+        <p>Revista Digital de Tecnologia</p>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Artigos</a>
+            <a href="#">Entrevistas</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Primeiro artigo — contém um aside INTERNO (contextual) -->
+        <article>
+            <header>
+                <h2>O Futuro da Computação Quântica</h2>
+            </header>
+
+            <p>
+                A computação quântica está deixando os laboratórios e começando a encontrar
+                aplicações práticas no mundo real. Empresas como IBM, Google e startups
+                brasileiras investem bilhões no desenvolvimento de processadores quânticos
+                mais estáveis e acessíveis.
+            </p>
+
+            <!--
+                ASIDE INTERNO (contextual): este aside é tangencial ao artigo em que
+                está inserido. Ele complementa o conteúdo do artigo com uma curiosidade
+                relacionada, mas que não faz parte do fluxo principal do texto.
+                Diferente do aside global, este só faz sentido no contexto deste artigo.
+            -->
+            <aside>
+                <h3>Curiosidade</h3>
+                <p>
+                    O termo <em>"qubit"</em> foi cunhado pelo físico Benjamin Schumacher
+                    em 1995. Diferente de um bit clássico que é 0 ou 1, um qubit pode
+                    existir em <strong>superposição</strong> — sendo ambos ao mesmo tempo
+                    até ser medido. Isso é o que dá à computação quântica seu poder
+                    exponencial para certos tipos de problemas.
+                </p>
+            </aside>
+
+            <p>
+                Os avanços recentes permitiram que algoritmos quânticos resolvessem
+                problemas de otimização logística em minutos, tarefas que levariam
+                anos em computadores tradicionais. Especialistas preveem que até 2030,
+                a computação quântica estará integrada a soluções comerciais em áreas
+                como farmacêutica, finanças e criptografia.
+            </p>
+
+            <footer>
+                Por <strong>Dra. Fernanda Rocha</strong> — 11/02/2026
+            </footer>
+        </article>
+
+        <!-- Segundo artigo — sem aside interno -->
+        <article>
+            <header>
+                <h2>Rust Ganha Espaço no Desenvolvimento de Sistemas</h2>
+            </header>
+
+            <p>
+                A linguagem Rust vem conquistando cada vez mais adeptos na comunidade
+                de desenvolvimento de sistemas. Sua promessa de <strong>segurança de
+                memória sem garbage collector</strong> atraiu grandes empresas como
+                Microsoft, Amazon e Linux Foundation.
+            </p>
+
+            <p>
+                O kernel Linux já aceita contribuições em Rust desde 2022, e o número
+                de módulos escritos na linguagem cresce a cada release. Para
+                desenvolvedores acostumados com C e C++, a curva de aprendizado é
+                compensada pela eliminação de classes inteiras de bugs relacionados
+                a gerenciamento de memória.
+            </p>
+
+            <p>
+                Pesquisas recentes indicam que projetos em Rust apresentam
+                <em>70% menos vulnerabilidades</em> relacionadas a memória quando
+                comparados a equivalentes em C. Esse dado tem sido determinante na
+                adoção corporativa da linguagem.
+            </p>
+
+            <footer>
+                Por <strong>Thiago Almeida</strong> — 10/02/2026
+            </footer>
+        </article>
+
+    </main>
+
+    <!--
+        ASIDE GLOBAL: este aside é tangencial à página como um todo,
+        não a um artigo específico. Ele apresenta conteúdo complementar
+        genérico (newsletter, trending topics) que se relaciona com o
+        site inteiro, não com um único artigo.
+    -->
+    <aside>
+        <section>
+            <h2>Trending Topics</h2>
+            <ul>
+                <li><a href="#">IA Generativa</a></li>
+                <li><a href="#">Web Assembly</a></li>
+                <li><a href="#">Edge Computing</a></li>
+                <li><a href="#">Blockchain na Saúde</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Newsletter</h2>
+            <p>Receba as principais notícias de tecnologia toda semana.</p>
+            <form action="#" method="post">
+                <label for="email-news">Seu e-mail:</label>
+                <input type="email" id="email-news" name="email" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </section>
+    </aside>
+
+    <footer>
+        <p>© 2026 TechMag — Revista Digital de Tecnologia</p>
+        <p>Contato: redacao@techmag.com.br</p>
+    </footer>
+
+</body>
+</html>

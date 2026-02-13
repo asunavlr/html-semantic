@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de inscrição para o evento TechConf 2026">
+    <title>Inscrição — TechConf 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechConf 2026</h1>
+        <p>Conferência Nacional de Tecnologia e Inovação</p>
+
+        <nav aria-label="Navegação principal">
+            <a href="#">Home</a>
+            <a href="#">Programação</a>
+            <a href="#">Palestrantes</a>
+            <a href="#">Inscrição</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Sobre o Evento</h2>
+
+            <img
+                src="https://via.placeholder.com/800x400"
+                alt="Auditório principal da TechConf com palco iluminado, tela de projeção ao fundo e plateia com aproximadamente 500 cadeiras organizadas em semicírculo"
+            >
+
+            <p>
+                A <strong>TechConf 2026</strong> reúne profissionais, estudantes e
+                entusiastas de tecnologia para dois dias de palestras, workshops e
+                networking. O evento acontece nos dias <time datetime="2026-05-15">15</time>
+                e <time datetime="2026-05-16">16 de maio de 2026</time> em São Paulo.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formulário de Inscrição</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required aria-required="true">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+
+                    <label for="empresa">Empresa ou Instituição</label>
+                    <input type="text" id="empresa" name="empresa">
+
+                    <label for="cargo">Cargo ou Curso</label>
+                    <input type="text" id="cargo" name="cargo">
+
+                    <label for="area">Área de atuação</label>
+                    <select id="area" name="area">
+                        <option value="">Selecione uma área</option>
+                        <option value="dev">Desenvolvimento</option>
+                        <option value="data">Dados e IA</option>
+                        <option value="infra">Infraestrutura e Cloud</option>
+                        <option value="design">Design e UX</option>
+                        <option value="gestao">Gestão de Projetos</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+
+                    <label for="modalidade">Modalidade de participação</label>
+                    <select id="modalidade" name="modalidade" required aria-required="true">
+                        <option value="">Selecione</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="online">Online</option>
+                    </select>
+
+                    <label for="observacoes">Observações ou necessidades especiais</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar Inscrição</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Palestrantes Confirmados</h2>
+        <ul>
+            <li><strong>Dra. Ana Beatriz Lima</strong> — IA Generativa e Ética</li>
+            <li><strong>Prof. Ricardo Tanaka</strong> — Computação Quântica</li>
+            <li><strong>Juliana Freitas</strong> — Design Systems em Escala</li>
+        </ul>
+
+        <img
+            src="https://via.placeholder.com/300x200"
+            alt="Mapa mostrando a localização do evento no centro de convenções em São Paulo, próximo à estação de metrô Faria Lima"
+        >
+    </aside>
+
+    <footer>
+        <p>© 2026 TechConf — Organização: Associação Brasileira de Tecnologia</p>
+        <p>Dúvidas: <a href="mailto:contato@techconf.com.br">contato@techconf.com.br</a></p>
+    </footer>
+
+</body>
+</html>
